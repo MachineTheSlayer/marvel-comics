@@ -14,5 +14,8 @@
     "axios": "^1.7.7",
     "re": "^0.1.4",
     "regenerator": "^0.14.12"
+  },
+  "devDependencies": {
+    "postcss-modules": "^3.2.2"
   }
 }
