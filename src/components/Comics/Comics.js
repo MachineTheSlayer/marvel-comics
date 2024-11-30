@@ -2,6 +2,7 @@ import { API_URL, URL_COMICS, URL_CHARACTERS, IMG_STANDARD_XLARGE, IMG_NOT_AVAIL
 import { getDataApi } from '../../utils/getDataApi';
 import { ROOT_INDEX } from '../../constants/root';
 
+import Characters from '../Characters/Characters';
 import Error from '../Error';
 
 import classes from './Comics.css';
@@ -46,7 +47,7 @@ class Comics {
             const uri = element.getAttribute('data-uri');
 
             element.addEventListener('click', () => {
-                console.log(uri);
+                Characters.render(uri);
             })
         })
     }
